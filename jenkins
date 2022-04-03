@@ -10,9 +10,8 @@ pipeline {
                   git clone https://github.com/ml619/workshop.git
                } 
                """
-               powershell "" 
                powershell "cd workshop"
-               powershell "./a.out"
+               powershell "cat hello.txt"
                 
             }
         }
