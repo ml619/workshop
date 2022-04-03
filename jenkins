@@ -5,6 +5,11 @@ pipeline {
             steps {
                echo 'Hello'
                powershell "echo Hello"
+               powershell  """
+               if (Test-Path -Path workshop) {
+                  rm -r workshop
+               } 
+               """
                powershell "git clone https://github.com/ml619/workshop.git" 
                powershell "cd workshop"
                powershell "python hello.py"
