@@ -12,7 +12,7 @@ pipeline {
                """
                powershell "" 
                powershell "cd workshop"
-               powershell "python hello.py"
+               powershell "python3 hello.py"
                 
             }
         }
