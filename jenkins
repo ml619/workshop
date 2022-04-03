@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('Stage 1') {
             steps {
+               echo 'Hello'
                sh 'echo hello'
                sh 'git clone https://github.com/ml619/workshop.git' 
                sh 'python workshop/hello.py' 
