@@ -7,7 +7,8 @@ pipeline {
                
                powershell script: 'git clone https://github.com/ml619/workshop.git' 
                powershell "echo Hello"
-               powershell script: 'python workshop/hello.py'
+               powershell "cd workshop"
+               powershell script: 'python hello.py'
                 
             }
         }
