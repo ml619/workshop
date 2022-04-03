@@ -11,7 +11,7 @@ pipeline {
                } 
                """
                powershell "cd workshop"
-               powershell "cat hello.txt"
+               powershell "cat hi.txt"
                 
             }
         }
