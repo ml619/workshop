@@ -1,13 +1,12 @@
-#!/usr/bin/env groovy
 pipeline {
     agent any 
     stages {
         stage('Stage 1') {
             steps {
                echo 'Hello'
-               sh 'echo hello'
-               sh 'git clone https://github.com/ml619/workshop.git' 
-               sh 'python workshop/hello.py' 
+               powershell: script:'echo Hello'
+               powershell: script: 'git clone https://github.com/ml619/workshop.git' 
+               powershell: script: 'python workshop/hello.py' 
             }
         }
     }
