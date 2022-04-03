@@ -5,6 +5,17 @@ pipeline {
             steps {
                echo 'Hello' 
             }
+            steps {
+               echo 'Hello again' 
+            }
+        }
+        stage('Stage 2') {
+            steps {
+               echo 'I am in stage 2 now' 
+            }
+            steps {
+               echo 'Hello from stage 2' 
+            }
         }
     }
 }
