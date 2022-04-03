@@ -6,11 +6,11 @@ pipeline {
                echo 'Hello'
                powershell "echo Hello"
                powershell  """
-               if (Test-Path -Path workshop) {
-                  rm -r workshop
+               if (!(Test-Path -Path workshop)) {
+                  git clone https://github.com/ml619/workshop.git
                } 
                """
-               powershell "git clone https://github.com/ml619/workshop.git" 
+               powershell "" 
                powershell "cd workshop"
                powershell "python hello.py"
                 
