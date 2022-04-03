@@ -4,11 +4,10 @@ pipeline {
         stage('Stage 1') {
             steps {
                echo 'Hello'
-               
-               powershell script: 'git clone https://github.com/ml619/workshop.git' 
                powershell "echo Hello"
+               powershell "git clone https://github.com/ml619/workshop.git" 
                powershell "cd workshop"
-               powershell script: 'python hello.py'
+               powershell "python hello.py"
                 
             }
         }
