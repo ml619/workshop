@@ -11,7 +11,7 @@ pipeline {
                } 
                """
                powershell "cd workshop"
-               powershell "python hello.py"
+               python "hello.py"
                powershell "./a.out" 
             }
         }
