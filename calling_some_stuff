@@ -10,7 +10,8 @@ pipeline {
                   git clone https://github.com/ml619/workshop.git
                } 
                """
-               powershell "cd workshop"
+               sh "dir workshop"
+               sh "python hello.py"
             }
         }
     }
