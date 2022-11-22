@@ -11,7 +11,7 @@ pipeline {
                } 
                """
                sh "dir workshop"
-               sh "python hello.py"
+               sh "python -V"
             }
         }
     }
