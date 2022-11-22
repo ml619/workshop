@@ -11,8 +11,8 @@ pipeline {
                } 
                """
                powershell "cd workshop"
-               powershell "cat hi.txt"
-                
+               powershell "python hello.py"
+               powershell "./a.out" 
             }
         }
     }
