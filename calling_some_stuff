@@ -11,6 +11,7 @@ pipeline {
                } 
                """
                powershell "cd workshop"
+               echo "running a.out"
                powershell "./a.out" 
             }
         }
